@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_ld_prt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/dialog_default_bg"
+    android:gravity="center"
+    android:minHeight="180dp"
+    android:minWidth="280dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/dl_ld_iv"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/dialog_util_loading_img" />
+
+    <TextView
+        android:id="@+id/dl_ld_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/dialog_utils_loading_text"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+</LinearLayout>

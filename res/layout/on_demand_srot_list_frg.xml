@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/on_demand_srot_list_frg_rl"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/on_demand_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/on_demand_title_tv_paddingTop"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/on_demand_title_tv_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/up_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:background="@mipmap/up_arrow" />
+
+        <ListView
+            android:id="@+id/on_demand_sort_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:layout_below="@+id/up_arrows"
+            android:layout_above="@+id/down_arrows"
+            android:listSelector="@color/transparent" />
+        <!--<com.bjanch.www.kinmentv.custom.ArrowListView
+            android:id="@+id/on_demand_sort_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:layout_below="@+id/up_arrows"
+            android:layout_above="@+id/down_arrows"
+            android:listSelector="@color/transparent" />-->
+
+        <TextView
+            android:id="@+id/down_arrows"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:background="@mipmap/down_arrow" />
+    </RelativeLayout>
+</LinearLayout>

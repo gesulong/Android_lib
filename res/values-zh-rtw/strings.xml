@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">KinmenTV</string>
+
+    <string name="mp_control_def_time">00:00:00</string>
+    <string name="NULL">N/A</string>
+    <string name="mp_contorl_time_divider">/</string>
+    <string name="mp_control_current_paly">當前播放：</string>
+    <string name="mp_flow_buff_text">加載中請稍候…</string>
+    <string name="dialog_utils_loading_text">數據加載中…</string>
+
+    <string name="live">直播</string>
+    <string name="anime">動漫</string>
+    <string name="movice">電影</string>
+    <string name="tv_trama">電視劇</string>
+    <string name="game">遊戲</string>
+    <string name="variety">綜藝</string>
+    <string name="children">少兒</string>
+    <string name="publication">刊物</string>
+
+    <string name="filtrate">篩　　選</string>
+    <string name="all">全　　部</string>
+    <string name="other">其　　他</string>
+
+    <string name="search_all_movice_up">共搜索到</string>
+    <string name="search_all_movice_down">部影片</string>
+
+    <string name="right_now_play">立即播放</string>
+    <string name="more_details">更多簡介</string>
+    <string name="episode_list">劇集列表</string>
+    <string name="related_movice">相關影片</string>
+    <string name="type">按類型</string>
+    <string name="area">按地區</string>
+    <string name="date">按時間</string>
+    <string name="select_action">操作選項</string>
+    <string name="clean_filtrate">清除篩選</string>
+    //直播
+    <string name="live_bottom_now">正在播出：</string>
+    <string name="live_bottom_next">接下來播出：</string>
+    <string name="live_dialog_title">鎖碼頻道需要驗證身份，請輸入密碼</string>
+    <string name="live_left_title_0">國內頻道</string>
+    <string name="live_left_title_0_">無國內頻道</string>
+    <string name="live_left_title_1">國外頻道</string>
+    <string name="live_left_title_1_">無國外頻道</string>
+    <string name="live_left_title_2">鎖碼頻道</string>
+    <string name="live_left_title_2_">無鎖碼頻道</string>
+
+    //刊物
+    <string name="magazine_title">刊物</string>
+    <string name="magazine_back_message">按菜單鍵或長按返回鍵退出選擇其他刊物</string>
+
+    //更新APK
+    <string name="find_new_version">新版本</string>
+    <string name="version_code">版本編號:</string>
+    <string name="updata_content">更新內容:</string>
+    //按钮文字
+    <string name="button_sure">確定</string>
+    <string name="button_cancle">取消</string>
+    //下载
+    <string name="download_failure_retry">下載失敗，請重試</string>
+    <string name="download_success">下載成功</string>
+    <string name="downloading_please_wait">下載中，請耐心等待</string>
+    <string name="download_backgroud">后台下載</string>
+
+</resources>

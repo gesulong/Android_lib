@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/on_demand_video_episode_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="@dimen/on_demand_video_episode_list_vw_item_pading"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="#7CFC00"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="@dimen/on_demand_video_episode_list_vw_item_size" />
+
+</RelativeLayout>

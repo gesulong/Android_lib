@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="@dimen/od_demand_movice_details_item_fl_width"
+            android:layout_height="@dimen/od_demand_movice_details_item_fl_height"
+            android:id="@+id/related_movice_ll">
+
+            <ImageView
+                android:id="@+id/related_movice_iv"
+                android:layout_width="@dimen/od_demand_movice_details_item_iv_width"
+                android:layout_height="@dimen/od_demand_movice_details_item_iv_height"
+                android:src="@mipmap/default_pic"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="@dimen/od_demand_movice_details_item_iv_marginLeft"
+                android:layout_marginTop="@dimen/od_demand_movice_details_item_iv_marginTop"
+                android:background="@drawable/on_demand_content_item_bg_sl"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/od_demand_movice_details_item_ll_padding"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/od_demand_movice_details_item_marginTop"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/related_movice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:layout_gravity="center"
+                android:textSize="@dimen/related_movice_tv_size"
+                android:paddingBottom="@dimen/related_movice_tv_paddingBottom"
+                android:textColor="@android:color/white"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

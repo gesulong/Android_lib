@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" jdk="Android API 19 Platform" jdk_type="Android SDK">
+	<output-test url="file://$MODULE_DIR$/../out/test/Test"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="gson-2.2.4.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Test/libs/gson-2.2.4.jar!/"/>
+	</lib>
+	<lib name="xUtils-2.6.14.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/Test/libs/xUtils-2.6.14.jar!/"/>
+	</lib>
+	<levels>
+		<level name="android-support-v4" value="project"/>
+	</levels>
+</component>

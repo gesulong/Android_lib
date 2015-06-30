@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mp_control_tool_parent_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/mp_control_tool_center_pause_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/mp_ctrl_pause_ib_sl"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/mp_control_tool_ly_padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/mp_control_tool_ly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/mp_ctrl_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/mp_control_tool_ly_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/mp_control_tool_top_tv_cnttl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/mp_control_current_paly"
+                    android:textSize="@dimen/mp_control_tool_top_tv_cnttl_size" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center">
+                    <TextView
+                        android:id="@+id/mp_control_tool_top_tv_cnttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="2dp"
+                        android:paddingLeft="2dp"
+                        android:text="@string/mp_control_def_time"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/mp_control_tool_info_size" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="2dp"
+                        android:paddingLeft="2dp"
+                        android:text="@string/mp_contorl_time_divider"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/mp_control_tool_info_size" />
+                    <TextView
+                        android:id="@+id/mp_control_tool_top_tv_lentime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mp_control_def_time"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/mp_control_tool_info_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/mp_control_tool_bom_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mp_ctrl_pause_sl"
+                    android:contentDescription="@string/app_name"
+                    android:paddingLeft="@dimen/mp_control_tool_bom_ib_paddingLeft"
+                    android:paddingRight="@dimen/mp_control_tool_bom_ib_paddingRight"/>
+
+
+
+                <SeekBar
+                    android:id="@+id/mp_control_tool_bom_sk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxHeight="@dimen/mp_control_tool_bom_sk_maxHeight"
+                    android:minHeight="@dimen/mp_control_tool_bom_sk_minHeight"
+                    android:progressDrawable="@drawable/mp_ctrl_sk_sl"
+                    android:thumb="@mipmap/mp_ctrl_sk_thumb" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:baselineAligned="false">
+    <!-- 倒影 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_layout_reflect_rtl">
+
+        <ImageView
+            android:id="@+id/app_live_reflect_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/app_anime_reflect_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_anime_reflect_iv" />
+
+        <ImageView
+            android:id="@+id/app_game_reflect_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_music_reflect_iv" />
+
+        <ImageView
+            android:id="@+id/app_children_reflect_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_publication_reflect_iv" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <FrameLayout
+            android:id="@+id/app_live_fl"
+            android:layout_width="@dimen/app_live_fl_width"
+            android:layout_height="@dimen/app_live_fl_height">
+
+            <ImageView
+                android:id="@+id/app_live_shadow_iv"
+                android:layout_width="@dimen/app_live_shadow_iv_width"
+                android:layout_height="@dimen/app_live_shadow_iv_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_item_fouce" />
+
+            <RelativeLayout
+                android:id="@+id/app_live_rl"
+                android:layout_width="@dimen/app_live_icon_iv_width"
+                android:layout_height="@dimen/app_live_icon_iv_height"
+                android:layout_marginLeft="@dimen/app_live_icon_iv_left"
+                android:layout_marginTop="@dimen/app_live_icon_iv_top"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/main_item_selector"
+                android:nextFocusDown="@+id/app_live_rl"
+                android:nextFocusRight="@+id/app_movie_rl"
+                android:nextFocusUp="@+id/app_live_rl"
+                android:nextFocusLeft="@+id/app_live_rl"
+                android:padding="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/live"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/app_live_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/live"
+                        android:padding="5dp"
+                        android:textSize="@dimen/app_layout_tv_size"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:background="#60000000"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/app_movie_fl"
+            android:layout_width="@dimen/app_movie_fl_width"
+            android:layout_height="@dimen/app_movie_fl_height"
+            android:layout_marginLeft="@dimen/app_movie_fl_left">
+
+            <ImageView
+                android:id="@+id/app_movie_shadow_iv"
+                android:layout_width="@dimen/app_movie_shadow_iv_width"
+                android:layout_height="@dimen/app_movie_shadow_iv_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_item_fouce" />
+
+            <RelativeLayout
+                android:id="@+id/app_movie_rl"
+                android:layout_width="@dimen/app_movie_icon_iv_width"
+                android:layout_height="@dimen/app_movie_icon_iv_height"
+                android:layout_marginLeft="@dimen/app_movie_icon_iv_left"
+                android:layout_marginTop="@dimen/app_movie_icon_iv_top"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/main_item_selector"
+                android:nextFocusDown="@+id/app_anime_rl"
+                android:nextFocusRight="@+id/app_tv_drama_rl"
+                android:nextFocusUp="@+id/app_movie_rl"
+                android:nextFocusLeft="@+id/app_live_rl"
+                android:padding="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/movice"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitCenter"
+                        android:layout_centerInParent="true"
+                        android:layout_above="@+id/app_movie_tv"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/movice_icon" />
+
+                    <TextView
+                        android:id="@+id/app_movie_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/movice"
+                        android:padding="5dp"
+                        android:textSize="@dimen/app_layout_tv_size"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/app_anime_fl"
+            android:layout_width="@dimen/app_anime_fl_width"
+            android:layout_height="@dimen/app_anime_fl_height"
+            android:layout_marginLeft="@dimen/app_anime_fl_left"
+            android:layout_marginTop="@dimen/app_anime_fl_top">
+
+            <ImageView
+                android:id="@+id/app_anime_shadow_iv"
+                android:layout_width="@dimen/app_anime_shadow_iv_width"
+                android:layout_height="@dimen/app_anime_shadow_iv_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_item_fouce" />
+
+            <RelativeLayout
+                android:id="@+id/app_anime_rl"
+                android:layout_width="@dimen/app_anime_icon_iv_width"
+                android:layout_height="@dimen/app_anime_icon_iv_height"
+                android:layout_marginLeft="@dimen/app_anime_icon_iv_left"
+                android:layout_marginTop="@dimen/app_anime_icon_iv_top"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/main_item_selector"
+                android:nextFocusDown="@+id/app_anime_rl"
+                android:nextFocusRight="@+id/app_game_rl"
+                android:nextFocusUp="@+id/app_movie_rl"
+                android:nextFocusLeft="@+id/app_live_rl"
+                android:padding="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/anime"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitCenter"
+                        android:layout_centerInParent="true"
+                        android:layout_above="@+id/app_anime_tv"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/anime_icon" />
+
+                    <TextView
+                        android:id="@+id/app_anime_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/anime"
+                        android:padding="5dp"
+                        android:textSize="@dimen/app_layout_tv_size"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/app_tv_drama_fl"
+            android:layout_width="@dimen/app_tv_drama_fl_width"
+            android:layout_height="@dimen/app_tv_drama_fl_height"
+            android:layout_marginLeft="@dimen/app_tv_drama_fl_left">
+
+            <ImageView
+                android:id="@+id/app_tv_drama_shadow_iv"
+                android:layout_width="@dimen/app_tv_drama_shadow_iv_width"
+                android:layout_height="@dimen/app_tv_drama_shadow_iv_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_item_fouce" />
+
+            <RelativeLayout
+                android:id="@+id/app_tv_drama_rl"
+                android:layout_width="@dimen/app_tv_drama_icon_iv_width"
+                android:layout_height="@dimen/app_tv_drama_icon_iv_height"
+                android:layout_marginLeft="@dimen/app_tv_drama_icon_iv_left"
+                android:layout_marginTop="@dimen/app_tv_drama_icon_iv_top"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/main_item_selector"
+                android:nextFocusDown="@+id/app_game_rl"
+                android:nextFocusRight="@+id/app_variety_rl"
+                android:nextFocusUp="@+id/app_tv_drama_rl"
+                android:nextFocusLeft="@+id/app_movie_rl"
+                android:padding="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/tv_drama"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitCenter"
+                        android:layout_centerInParent="true"
+                        android:layout_above="@+id/app_tv_drama_tv"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/tv_drama_icon" />
+
+                    <TextView
+                        android:id="@+id/app_tv_drama_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_trama"
+                        android:padding="5dp"
+                        android:textSize="@dimen/app_layout_tv_size"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/app_game_fl"
+            android:layout_width="@dimen/app_music_fl_width"
+            android:layout_height="@dimen/app_music_fl_height"
+            android:layout_marginLeft="@dimen/app_music_fl_left"
+            android:layout_marginTop="@dimen/app_music_fl_top">
+
+            <ImageView
+                android:id="@+id/app_game_shadow_iv"
+                android:layout_width="@dimen/app_music_shadow_iv_width"
+                android:layout_height="@dimen/app_music_shadow_iv_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_item_fouce" />
+
+            <RelativeLayout
+                android:id="@+id/app_game_rl"
+                android:layout_width="@dimen/app_music_icon_iv_width"
+                android:layout_height="@dimen/app_music_icon_iv_height"
+                android:layout_marginLeft="@dimen/app_music_icon_iv_left"
+                android:layout_marginTop="@dimen/app_music_icon_iv_top"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/main_item_selector"
+                android:nextFocusDown="@+id/app_game_rl"
+                android:nextFocusRight="@+id/app_publication_rl"
+                android:nextFocusUp="@+id/app_tv_drama_rl"
+                android:nextFocusLeft="@+id/app_anime_rl"
+                android:padding="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/game"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitCenter"
+                        android:layout_centerInParent="true"
+                        android:layout_above="@+id/app_game_tv"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/game_icon" />
+
+                    <TextView
+                        android:id="@+id/app_game_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game"
+                        android:padding="5dp"
+                        android:textSize="@dimen/app_layout_tv_size"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/app_variety_fl"
+            android:layout_width="@dimen/app_variety_fl_width"
+            android:layout_height="@dimen/app_variety_fl_height"
+            android:layout_marginLeft="@dimen/app_variety_fl_left">
+
+            <ImageView
+                android:id="@+id/app_variety_shadow_iv"
+                android:layout_width="@dimen/app_variety_shadow_iv_width"
+                android:layout_height="@dimen/app_variety_shadow_iv_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_item_fouce" />
+
+            <RelativeLayout
+                android:id="@+id/app_variety_rl"
+                android:layout_width="@dimen/app_variety_icon_iv_width"
+                android:layout_height="@dimen/app_variety_icon_iv_height"
+                android:layout_marginLeft="@dimen/app_variety_icon_iv_left"
+                android:layout_marginTop="@dimen/app_variety_icon_iv_top"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/main_item_selector"
+                android:nextFocusDown="@+id/app_publication_rl"
+                android:nextFocusRight="@+id/app_children_rl"
+                android:nextFocusUp="@+id/app_variety_rl"
+                android:nextFocusLeft="@+id/app_tv_drama_rl"
+                android:padding="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/variety"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitCenter"
+                        android:layout_centerInParent="true"
+                        android:layout_above="@+id/app_variety_tv"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/variety_icon" />
+
+                    <TextView
+                        android:id="@+id/app_variety_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/variety"
+                        android:padding="5dp"
+                        android:textSize="@dimen/app_layout_tv_size"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/app_children_fl"
+            android:layout_width="@dimen/app_education_fl_width"
+            android:layout_height="@dimen/app_education_fl_height"
+            android:layout_marginLeft="@dimen/app_education_fl_left">
+
+            <ImageView
+                android:id="@+id/app_children_shadow_iv"
+                android:layout_width="@dimen/app_education_shadow_iv_width"
+                android:layout_height="@dimen/app_education_shadow_iv_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_item_fouce" />
+
+            <RelativeLayout
+                android:id="@+id/app_children_rl"
+                android:layout_width="@dimen/app_education_icon_iv_width"
+                android:layout_height="@dimen/app_education_icon_iv_height"
+                android:layout_marginLeft="@dimen/app_education_icon_iv_left"
+                android:layout_marginTop="@dimen/app_education_icon_iv_top"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/main_item_selector"
+                android:nextFocusDown="@+id/app_publication_rl"
+                android:nextFocusRight="@+id/app_children_rl"
+                android:nextFocusUp="@+id/app_children_rl"
+                android:nextFocusLeft="@+id/app_variety_rl"
+                android:padding="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/children"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitCenter"
+                        android:layout_centerInParent="true"
+                        android:layout_above="@+id/app_children_tv"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/children_icon" />
+
+                    <TextView
+                        android:id="@+id/app_children_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/children"
+                        android:padding="5dp"
+                        android:textSize="@dimen/app_layout_tv_size"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/app_publication_fl"
+            android:layout_width="@dimen/app_publication_fl_width"
+            android:layout_height="@dimen/app_publication_fl_height"
+            android:layout_marginLeft="@dimen/app_publication_fl_left"
+            android:layout_marginTop="@dimen/app_publication_fl_top">
+
+            <ImageView
+                android:id="@+id/app_publication_shadow_iv"
+                android:layout_width="@dimen/app_publication_shadow_iv_width"
+                android:layout_height="@dimen/app_publication_shadow_iv_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_item_fouce" />
+
+            <RelativeLayout
+                android:id="@+id/app_publication_rl"
+                android:layout_width="@dimen/app_publication_icon_iv_width"
+                android:layout_height="@dimen/app_publication_icon_iv_height"
+                android:layout_marginLeft="@dimen/app_publication_icon_iv_left"
+                android:layout_marginTop="@dimen/app_publication_icon_iv_top"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/main_item_selector"
+                android:nextFocusDown="@+id/app_publication_rl"
+                android:nextFocusRight="@+id/app_publication_rl"
+                android:nextFocusUp="@+id/app_variety_rl"
+                android:nextFocusLeft="@+id/app_game_rl"
+                android:padding="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/publication"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/app_publication_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/publication"
+                        android:padding="5dp"
+                        android:textSize="@dimen/app_layout_tv_size"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:background="#60000000"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/m600dp"
+    android:layout_height="@dimen/m120dp"
+    android:background="@mipmap/live_btm_menu_bg2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/live_show_channel_btm_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m60dp"
+            android:layout_marginLeft="@dimen/m25dp"
+            android:gravity="center_vertical"
+            android:text="@string/NULL"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/m30sp" />
+
+
+        <com.bjanch.www.kinmentv.custom.LiveProgressView
+            android:id="@+id/live_show_btm_progress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m10dp"
+            android:layout_marginLeft="@dimen/m25dp"
+            android:layout_marginRight="@dimen/m25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/m25dp"
+            android:layout_marginTop="@dimen/m5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/live_show_nowpro_btm_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="#74f40d"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/m22sp"
+                android:text="@string/live_bottom_now" />
+
+            <TextView
+                android:id="@+id/live_show_nextpro_btm_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/m22sp"
+                android:text="@string/live_bottom_next" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

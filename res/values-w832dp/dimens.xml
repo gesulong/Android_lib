@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="video_info_details_title">28sp</dimen>
+    <dimen name="video_info_details_episodecount">16sp</dimen>
+    <dimen name="video_info_details_abstract">16sp</dimen>
+    <dimen name="video_info_details_episode">16sp</dimen>
+    <dimen name="video_info_details_inDetials">16sp</dimen>
+    <dimen name="video_info_details_offCache">16sp</dimen>
+    <dimen name="video_info_details_left">8.0dp</dimen>
+    <dimen name="video_info_details_bottom">8.0dp</dimen>
+    <dimen name="video_info_details_top">8.0dp</dimen>
+    <dimen name="video_info_details_padding">8.0dp</dimen>
+    <dimen name="video_info_details_padding_bottom">17dp</dimen>
+    <dimen name="video_info_details_padding_top">17dp</dimen>
+    <dimen name="video_info_details_padding_left">32dp</dimen>
+    <dimen name="video_info_details_padding_right">32dp</dimen>
+    <dimen name="video_info_details_margin">29dp</dimen>
+    <dimen name="video_info_details_abstract_padding">8.0dp</dimen>
+    <dimen name="video_info_details_abstract_margin">8.0dp</dimen>
+    <dimen name="video_info_details_lin_paddingleft">15.3dp</dimen>
+    <dimen name="video_info_details_lin_paddingright">15.3dp</dimen>
+    <dimen name="video_info_details_ep_margin">8.0dp</dimen>
+    <dimen name="video_info_details_im_margin">15.3dp</dimen>
+    <dimen name="video_info_details_episode_width">104dp</dimen>
+    <dimen name="video_info_details_inDetials_width">104dp</dimen>
+    <dimen name="video_info_details_offCache_width">104dp</dimen>
+    <dimen name="video_info_details_gridView_height">114dp</dimen>
+    <dimen name="video_info_details_gridView_margin">8.0dp</dimen>
+    <dimen name="video_info_details_gridView_div">10.2dip</dimen>
+    <dimen name="video_info_details_episode_size">15.6sp</dimen>
+    <dimen name="video_info_details_info_margin">55dp</dimen>
+    <dimen name="video_info_details_info_padding">6.5dp</dimen>
+    <dimen name="video_info_details_info_size">22.5sp</dimen>
+    <dimen name="include_top_view_date">11sp</dimen>
+    <dimen name="include_top_view_time">13sp</dimen>
+    <dimen name="video_act_title_paddingLeft">7.8dp</dimen>
+    <dimen name="video_act_title_paddingRight">7.8dp</dimen>
+    <dimen name="video_act_title">15.2sp</dimen>
+    <dimen name="video_act_search_edittext">10.9sp</dimen>
+    <dimen name="video_act_search_marginRight">20.9dp</dimen>
+    <dimen name="video_act_search_width">39.9dp</dimen>
+    <dimen name="video_left_sort_frg_title">19.6sp</dimen>
+    <dimen name="video_left_sort_frg_group_text">14.6sp</dimen>
+    <dimen name="video_left_sort_frg_group_img_marginRight">12dip</dimen>
+    <dimen name="video_left_child_text">12sp</dimen>
+    <dimen name="video_frg_item_text">12sp</dimen>
+    <dimen name="down_load_act_width">100dp</dimen>
+    <dimen name="down_load_act_height">110dp</dimen>
+    <dimen name="down_load_act_margin">18dip</dimen>
+    <dimen name="down_load_act_downbtn_weight">59.2dp</dimen>
+    <dimen name="down_load_act_down_name_text">21.08sp</dimen>
+    <dimen name="down_load_act_down_rate_text">16.08sp</dimen>
+    <dimen name="laws_book_section_act_margin">17.9dip</dimen>
+    <dimen name="laws_book_section_list_marginTop">16dip</dimen>
+    <dimen name="laws_book_section_list_title">21sp</dimen>
+    <dimen name="child_item_upRoomBtn">23dp</dimen>
+    <dimen name="child_item_downRoomBtn">37dp</dimen>
+    <dimen name="child_item_marginLeftAndRight">27dip</dimen>
+    <dimen name="child_item_padding">5.7dp</dimen>
+    <dimen name="child_item_textsize">13.4sp</dimen>
+    <dimen name="group_item_textsize">17sp</dimen>
+    <dimen name="group_item_marginLeftandRight">17dip</dimen>
+    <dimen name="health_act_marginLeft">15dip</dimen>
+    <dimen name="health_act_margin">20dp</dimen>
+    <dimen name="health_left_frg_title">22sp</dimen>
+    <dimen name="health_left_frg_padding">7.5dp</dimen>
+    <dimen name="health_left_frg_item_text">16.7sp</dimen>
+    <dimen name="health_right_frg_padding">16.7dip</dimen>
+    <dimen name="video_double_meeting_act_list_width">195dp</dimen>
+    <dimen name="video_double_meeting_act_list_height">325dp</dimen>
+    <dimen name="video_double_meeting_act_list_left">46dp</dimen>
+    <dimen name="video_double_meeting_act_meeting_width">195dp</dimen>
+    <dimen name="video_double_meeting_act_meeting_height">163dp</dimen>
+    <dimen name="update_versions_width">374dp</dimen>
+    <dimen name="update_versions_height">268dp</dimen>
+
+    <!-- dp -->
+    <dimen name="m950dp">618dp</dimen><dimen name="m_950dp">-618dp</dimen>
+    <dimen name="m600dp">400dp</dimen><dimen name="m_600dp">-400dp</dimen>
+    <dimen name="m550dp">358dp</dimen><dimen name="m_550dp">-358dp</dimen>
+    <dimen name="m500dp">325dp</dimen>
+    <dimen name="m450dp">293dp</dimen>
+    <dimen name="m400dp">260dp</dimen>
+    <dimen name="m350dp">230dp</dimen>
+    <dimen name="m300dp">195dp</dimen>
+    <dimen name="m280dp">180dp</dimen>
+    <dimen name="m270dp">176dp</dimen>
+    <dimen name="m260dp">169dp</dimen>
+    <dimen name="m250dp">163dp</dimen><dimen name="m_250dp">-163dp</dimen>
+    <dimen name="m200dp">130dp</dimen>
+    <dimen name="m160dp">104dp</dimen>
+    <dimen name="m120dp">78dp</dimen>
+    <dimen name="m100dp">65dp</dimen>
+    <dimen name="m80dp">52dp</dimen>
+    <dimen name="m70dp">46dp</dimen>
+    <dimen name="m60dp">40dp</dimen>
+    <dimen name="m50dp">33dp</dimen>
+    <dimen name="m45dp">29dp</dimen>
+    <dimen name="m40dp">26dp</dimen>
+    <dimen name="m35dp">23dp</dimen>
+    <dimen name="m30dp">20dp</dimen>
+    <dimen name="m25dp">16dp</dimen>
+    <dimen name="m20dp">13dp</dimen>
+    <dimen name="m15dp">10dp</dimen>
+    <dimen name="m10dp">7dp</dimen>
+    <dimen name="m5dp">3dp</dimen>
+
+    <!-- sp -->
+    <dimen name="m60sp">40sp</dimen>
+    <dimen name="m35sp">23sp</dimen>
+    <dimen name="m30sp">20sp</dimen>
+    <dimen name="m28sp">18sp</dimen>
+    <dimen name="m25sp">16sp</dimen>
+    <dimen name="m24sp">16sp</dimen>
+    <dimen name="m22sp">14sp</dimen>
+    <dimen name="m20sp">13sp</dimen>
+    <dimen name="m18sp">12sp</dimen>
+    <dimen name="m15sp">10sp</dimen>
+</resources>

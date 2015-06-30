@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/magazine_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/m30dp"
+        android:paddingRight="@dimen/m30dp"
+        android:layout_marginTop="@dimen/m20dp"
+        android:paddingBottom="@dimen/m10dp"
+        android:background="@color/lucency"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/magazine_item_iv"
+            android:layout_width="@dimen/m300dp"
+            android:layout_height="@dimen/m450dp"
+            android:scaleType="fitXY"
+            android:padding="@dimen/m10dp"
+            android:background="@drawable/app_magazine_selector"
+            android:src="@mipmap/news_img_default" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/magazine_item_name_tv"
+        android:layout_width="@dimen/m300dp"
+        android:layout_height="@dimen/m50dp"
+        android:layout_marginLeft="@dimen/m30dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:padding="5dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="#EEffffff"
+        android:textSize="@dimen/m35sp" />
+
+
+</LinearLayout>

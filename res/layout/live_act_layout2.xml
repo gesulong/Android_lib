@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.bjanch.www.kinmentv.custom.MPlayer
+        android:id="@+id/live_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="0dp" />
+
+    <com.bjanch.www.kinmentv.custom.LiveLeftMenu2
+        android:id="@+id/live_left_menu"
+        android:layout_width="@dimen/m250dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/m20dp"
+        android:layout_marginTop="@dimen/m70dp" />
+
+    <com.bjanch.www.kinmentv.custom.LiveBottomMenu2
+        android:id="@+id/live_bottom_menu"
+        android:layout_width="@dimen/m600dp"
+        android:layout_height="@dimen/m160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

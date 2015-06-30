@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/m400dp"
+    android:layout_height="@dimen/m300dp"
+    android:background="@drawable/live_encode_dialog_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/m20dp">
+
+    <TextView
+        android:id="@+id/live_dialog_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m80dp"
+        android:gravity="center"
+        android:text="@string/live_dialog_title"
+        android:textSize="@dimen/m30sp" />
+
+    <EditText
+        android:id="@+id/live_dialog_code_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m60dp"
+        android:layout_marginTop="@dimen/m20dp"
+        android:background="@drawable/live_dialog_edit_bg"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/m20dp"
+        android:inputType="textPassword"
+        android:textSize="@dimen/m20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/m5dp"
+        android:padding="@dimen/m15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/live_dialog_ok_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/button_sure"
+            android:textSize="@dimen/m25sp"
+            android:textColor="@color/white"
+            android:background="@drawable/live_dialog_btn_selector"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/live_dialog_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/m10dp"
+            android:text="@string/button_cancle"
+            android:textSize="@dimen/m25sp"
+            android:textColor="@color/white"
+            android:background="@drawable/live_dialog_btn_selector"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>

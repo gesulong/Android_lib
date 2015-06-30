@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/on_demand_srot_list_content_frg_rl"
+            android:paddingLeft="@dimen/on_demand_srot_list_content_frg_paddingLeft"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_all_movice_up"
+                android:paddingTop="@dimen/on_demand_srot_list_content_frg_paddingTop"
+                android:textSize="@dimen/on_demand_srot_list_content_frg_size"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/on_demand_content_counts_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/on_demand_srot_list_content_frg_paddingTop"
+                android:textSize="@dimen/on_demand_srot_list_content_frg_size"
+                android:textColor="@color/bule_overlay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_all_movice_down"
+                android:paddingTop="@dimen/on_demand_srot_list_content_frg_paddingTop"
+                android:textSize="@dimen/on_demand_srot_list_content_frg_size"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/on_demand_content_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:verticalSpacing="@dimen/on_demand_content_gv_verticalSpacing"
+            android:horizontalSpacing="@dimen/on_demand_content_gv_horizontalSpacing"
+            android:padding="@dimen/on_demand_content_gv_padding"
+            android:layoutAnimation="@anim/layout_bottom_to_top_slide"
+            android:listSelector="@color/transparent"
+            android:numColumns="5"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            android:smoothScrollbar="true"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+</FrameLayout>
