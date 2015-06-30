@@ -21,8 +21,8 @@ import java.lang.ref.WeakReference;
 
 /**
  * 首页
- * Created by gesulong on 2015/4/13.
- * @author  gesulong
+ * Created by a on 2015/4/13.
+ * @author  a
  */
 @ContentView(R.layout.app_main)
 public class AppMainAct extends BaseFrgActivity{
@@ -85,7 +85,7 @@ public class AppMainAct extends BaseFrgActivity{
     @Override
     public void onBackPressed() {
         if ((System.currentTimeMillis() - mExitTime) > 2000) {
-            ToastTools.frameToast(this, "再按一次返回键退出程序", R.drawable.custom_toast);
+            ToastTools.frameToast(this, "再按一次返回键退出程�?, R.drawable.custom_toast);
             mExitTime = System.currentTimeMillis();
             return;
         }
