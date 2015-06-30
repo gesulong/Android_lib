@@ -21,8 +21,8 @@ import java.lang.ref.WeakReference;
 
 /**
  * 首页
- * Created by wxy on 2015/4/13.
- * @author  wxy
+ * Created by gesulong on 2015/4/13.
+ * @author  gesulong
  */
 @ContentView(R.layout.app_main)
 public class AppMainAct extends BaseFrgActivity{
